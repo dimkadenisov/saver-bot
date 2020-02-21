@@ -1,0 +1,26 @@
+{
+  "name": "saver-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for files saving",
+  "main": "./src/index.js",
+  "repository": "https://github.com/dimkadenisov/saver-bot",
+  "author": "Dima Denisov",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --watch ./src --exec babel-node --experimental-json-modules --experimental-specifier-resolution=node ./src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "39",
+    "https-proxy-agent": "^5.0.0",
+    "telegraf": "^3.36.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "nodemon": "^2.0.2"
+  }
+}
